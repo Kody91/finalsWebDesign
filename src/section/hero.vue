@@ -21,6 +21,8 @@
 
 <style scoped>
 .hero {
+  position: relative;
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -28,10 +30,14 @@
   min-height: 620px;
   padding: 80px 10%;
   color: white;
-  background: linear-gradient(120deg, #203b2b, #315e3c);
+  background:
+    radial-gradient(circle at 85% 20%, rgba(240, 210, 127, 0.12), transparent 28%),
+    linear-gradient(120deg, #203b2b, #315e3c);
 }
 
 .hero-text {
+  position: relative;
+  z-index: 1;
   max-width: 620px;
 }
 
@@ -45,7 +51,7 @@
   display: inline-block;
   margin: 0;
   padding: 9px 13px;
-  border: 1px solid rgba(240, 210, 127, 0.45);
+  border: 1px solid rgba(240, 210, 127, 0.5);
   border-radius: 20px;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -96,21 +102,23 @@ h1 {
 }
 
 .hero-logo {
+  position: relative;
+  z-index: 1;
   display: flex;
   width: 330px;
   height: 330px;
   flex-shrink: 0;
   align-items: center;
   justify-content: center;
-  border: 10px solid rgba(255, 255, 255, 0.16);
+  border: 10px solid #f2b52b;
   border-radius: 50%;
-  background: #f7f6ef;
-  box-shadow: 0 20px 50px rgba(12, 29, 18, 0.3);
+  background: #f1f4e8;
+  box-shadow: 0 20px 50px rgba(12, 29, 18, 0.24);
 }
 
 .hero-logo img {
-  width: 170px;
-  height: 170px;
+  width: 120px;
+  height: 120px;
   object-fit: contain;
 }
 
@@ -146,8 +154,8 @@ h1 {
   }
 
   .hero-logo img {
-    width: 140px;
-    height: 140px;
+    width: 105px;
+    height: 105px;
   }
 }
 </style>

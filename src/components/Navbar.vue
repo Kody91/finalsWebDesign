@@ -30,6 +30,12 @@
   box-shadow: 0 4px 16px rgba(20, 39, 27, 0.18);
 }
 
+.navbar.blis-navbar {
+  border-bottom-color: #60b1e8;
+  background: linear-gradient(100deg, #172b68, #254e93);
+  box-shadow: 0 4px 16px rgba(16, 31, 77, 0.2);
+}
+
 .brand {
   display: flex;
   align-items: center;
@@ -40,6 +46,10 @@
   letter-spacing: 0.5px;
   text-decoration: none;
   transition: color 0.25s;
+}
+
+.blis-navbar .brand:hover {
+  color: #bbea8e;
 }
 
 .brand img {
@@ -53,6 +63,11 @@
   transition: transform 0.3s, border-color 0.3s;
 }
 
+.blis-navbar .brand img {
+  border-color: rgba(96, 177, 232, 0.75);
+  background: #e9edf4;
+}
+
 .brand:hover {
   color: #f0d27f;
 }
@@ -60,6 +75,10 @@
 .brand:hover img {
   transform: rotate(-6deg) scale(1.06);
   border-color: #f0d27f;
+}
+
+.blis-navbar .brand:hover img {
+  border-color: #bbea8e;
 }
 
 nav {
@@ -81,11 +100,21 @@ nav a {
   transition: transform 0.2s, background-color 0.25s, color 0.25s, border-color 0.25s;
 }
 
+.blis-navbar nav a {
+  color: #e2e9f5;
+}
+
 nav a:hover {
   transform: translateY(-2px);
   border-color: rgba(240, 210, 127, 0.45);
   color: #f0d27f;
   background: #31533d;
+}
+
+.blis-navbar nav a:hover {
+  border-color: #60b1e8;
+  color: #bbea8e;
+  background: #172b68;
 }
 
 nav a:active {
@@ -96,6 +125,11 @@ nav a:active {
 nav a:focus-visible {
   outline: 2px solid #f0d27f;
   outline-offset: 3px;
+}
+
+.blis-navbar .brand:focus-visible,
+.blis-navbar nav a:focus-visible {
+  outline-color: #bbea8e;
 }
 
 @media (max-width: 600px) {

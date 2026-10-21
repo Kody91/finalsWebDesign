@@ -4,6 +4,6 @@ import BLIS from '@/section/BlisProgram.vue'
 </script>
 
 <template>
-  <Navbar/>
+  <Navbar class="blis-navbar" />
     <BLIS/>
 </template>

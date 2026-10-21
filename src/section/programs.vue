@@ -61,6 +61,9 @@
 
 <style scoped>
 .programs {
+  position: relative;
+  z-index: 1;
+  isolation: isolate;
   padding: 70px 8%;
   background: #f7f7f2;
 }
@@ -137,7 +140,7 @@ h2 {
 }
 
 .program-card:nth-child(4):hover {
-  border-color: #929fc2;
+  border-color: #465a83;
   background: #f3f5fa;
 }
 
@@ -186,13 +189,15 @@ details[open] summary span:last-child {
   padding: 9px 14px;
   border-radius: 4px;
   color: white;
-  background: #315e3c;
+  background: #465a83;
   font-weight: bold;
   text-decoration: none;
 }
 
 .program-link:hover {
-  background: #254a34;
+  color: #465a83;
+  background: #f3f5fa;
+  border: 1px solid #465a83;
 }
 
 @media (max-width: 900px) {

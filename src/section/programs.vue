@@ -34,13 +34,14 @@
 
       <article class="program-card">
         <img src="@/assets/img/dmia.png" alt="BSDMIA program logo" />
-        <h3>Bachelor of Science in Data Mining and Information Analytics (BSDMIA)</h3>
-        <p>Analyze information and turn data into useful findings and decisions.</p>
+        <h3>Bachelor of Science in Digital Media and Interactive Arts (BSDMIA)</h3>
+        <p>Explore digital design, multimedia storytelling, and interactive experiences.</p>
         <details name="bsdmia">
           <summary><span>Read more</span><span>Read less</span></summary>
-          <p><strong>Overview:</strong> Find patterns in data and use them to support decisions.</p>
-          <p><strong>What you can learn:</strong> Data preparation, analysis, visualization, and interpretation.</p>
-          <p><strong>Career paths:</strong> Data analyst, business intelligence analyst, and research analyst.</p>
+          <p><strong>Overview:</strong> Combine creative ideas and digital tools to create media and interactive content.</p>
+          <p><strong>What you can learn:</strong> Visual design, digital content creation, animation, and interactive experiences.</p>
+          <p><strong>Career paths:</strong> Graphic designer, multimedia artist, UI/UX designer, animator, and video editor.</p>
+          <a class="program-link3" href="/bsdmia">See more</a>
         </details>
       </article>
 
@@ -184,39 +185,58 @@ details[open] summary span:last-child {
   display: inline;
 }
 
-.program-link1 {
-  display: inline-block;
-  margin-top: 8px;
-  padding: 9px 14px;
-  border-radius: 4px;
-  color: white;
-  background: #9A6F00;
-  font-weight: bold;
-  text-decoration: none;
-}
-
+.program-link1,
+.program-link3,
 .program-link4 {
   display: inline-block;
   margin-top: 8px;
   padding: 9px 14px;
+  border: 1px solid transparent;
   border-radius: 4px;
   color: white;
-  background: #465a83;
   font-weight: bold;
   text-decoration: none;
+  transition: color 0.3s, background-color 0.3s, border-color 0.3s;
 }
 
-.program-link1:hover {
-  color: #9A6F00;
+.program-link1 {
+  background: #9a6f00;
+}
+
+.program-link4 {
+  background: #465a83;
+}
+
+.program-link3 {
+  background: #986525;
+}
+
+.program-link1:hover,
+.program-link1:focus-visible {
+  color: #9a6f00;
   background: #f3f5fa;
-  border: 1px solid #9A6F00;
+  border-color: #9a6f00;
 }
 
-
-.program-link4:hover {
+.program-link4:hover,
+.program-link4:focus-visible {
   color: #465a83;
   background: #f3f5fa;
-  border: 1px solid #465a83;
+  border-color: #465a83;
+}
+
+.program-link3:hover,
+.program-link3:focus-visible {
+  color: #986525;
+  background: #fff6e9;
+  border-color: #986525;
+}
+
+.program-link1:focus-visible,
+.program-link3:focus-visible,
+.program-link4:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 3px;
 }
 
 @media (max-width: 900px) {

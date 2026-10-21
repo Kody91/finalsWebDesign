@@ -42,6 +42,12 @@
   box-shadow: 0 4px 16px rgba(61, 46, 0, 0.22);
 }
 
+.navbar.bsdmia-navbar {
+  border-bottom-color: #f2b705;
+  background: linear-gradient(100deg, #302600, #765600);
+  box-shadow: 0 4px 16px rgba(48, 38, 0, 0.22);
+}
+
 .brand {
   display: flex;
   align-items: center;
@@ -83,6 +89,11 @@
   background: #fff9e0;
 }
 
+.bsdmia-navbar .brand img {
+  border-color: rgba(242, 183, 5, 0.75);
+  background: #fff9e0;
+}
+
 .brand:hover {
   color: #f0d27f;
 }
@@ -98,6 +109,10 @@
 
 .bsit-navbar .brand:hover img {
   border-color: #ffd93d;
+}
+
+.bsdmia-navbar .brand:hover img {
+  border-color: #f2b705;
 }
 
 nav {
@@ -127,6 +142,10 @@ nav a {
   color: #fff3bf;
 }
 
+.bsdmia-navbar nav a {
+  color: #fff3bf;
+}
+
 nav a:hover {
   transform: translateY(-2px);
   border-color: rgba(240, 210, 127, 0.45);
@@ -144,6 +163,12 @@ nav a:hover {
   border-color: #ffd93d;
   color: #ffd93d;
   background: #5c4300;
+}
+
+.bsdmia-navbar nav a:hover {
+  border-color: #f2b705;
+  color: #f2b705;
+  background: #302600;
 }
 
 nav a:active {

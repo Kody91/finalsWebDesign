@@ -154,81 +154,161 @@
 <style scoped>
 .faculty {
   padding: 70px 8%;
-  background: #f7f7f2;
+  background-color: #f7f7f2;
 }
+
 
 .heading {
   max-width: 700px;
-  margin: 0 auto 50px;
+  margin: 0 auto 60px;
   text-align: center;
 }
 
 .heading > p:first-child {
   color: #638366;
   font-weight: bold;
+  letter-spacing: 2px;
   text-transform: uppercase;
 }
 
 .heading h1 {
-  margin: 10px 0;
+  margin: 10px 0 18px;
   color: #254a34;
-  font-size: 36px;
+  font-size: 40px;
+}
+
+.heading h1::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 4px;
+  margin: 16px auto 0;
+  border-radius: 2px;
+  background: #638366;
 }
 
 .heading > p:last-child {
   line-height: 1.6;
 }
 
+
 .group {
   max-width: 1100px;
-  margin: 0 auto 42px;
+  margin: 0 auto 50px;
 }
 
 .group h2 {
-  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 22px;
   color: #254a34;
   font-size: 26px;
 }
 
+.group h2::before {
+  content: "";
+  width: 6px;
+  height: 28px;
+  border-radius: 3px;
+  background: #638366;
+}
+
+.group h2::after {
+  content: "";
+  height: 1px;
+  flex: 1;
+  background: #dce3da;
+}
+
+
 .people {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px;
+  gap: 22px;
 }
 
 .person {
   display: flex;
   min-height: 150px;
   align-items: center;
-  gap: 18px;
+  gap: 20px;
   padding: 18px;
   border: 1px solid #dce3da;
-  border-radius: 6px;
+  border-radius: 8px;
   background: white;
+  animation: fadeUp 0.5s ease both;
+}
+
+.person:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(37, 74, 52, 0.15);
+}
+
+
+.person:only-child {
+  grid-column: 1 / -1;
+  max-width: 520px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.person:only-child img {
+  width: 120px;
+  height: 140px;
 }
 
 .person img {
   width: 100px;
   height: 115px;
   flex-shrink: 0;
-  border-radius: 4px;
+  border-radius: 6px;
   object-fit: cover;
 }
 
+
+
 .person h3 {
-  margin: 0 0 8px;
+  margin: 0 0 10px;
   color: #254a34;
   font-size: 18px;
 }
 
+
 .person p {
+  display: inline-block;
   margin: 0;
+  padding: 4px 12px;
+  border: 1px solid #dce3da;
+  border-radius: 999px;
+  background: #f7f7f2;
+  color: #638366;
+  font-size: 14px;
+  font-weight: 600;
   line-height: 1.5;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .person {
+    animation: none;
+    transition: none;
+  }
 }
 
 @media (max-width: 700px) {
   .faculty {
     padding: 50px 20px;
+  }
+
+  .heading h1 {
+    font-size: 32px;
   }
 
   .people {
@@ -243,7 +323,8 @@
     padding: 14px;
   }
 
-  .person img {
+  .person img,
+  .person:only-child img {
     width: 78px;
     height: 95px;
   }

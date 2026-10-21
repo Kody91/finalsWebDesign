@@ -9,7 +9,7 @@ import Faculty from '@/section/faculty.vue'
     <Faculty />
   </main>
   <footer class="site-footer">
-    <a href="/#hero">CPU · CCS</a>
+    <RouterLink :to="{ path: '/', hash: '#hero' }">CPU · CCS</RouterLink>
     <span>College of Computer Studies</span>
     <span>Faculty and Staff</span>
   </footer>

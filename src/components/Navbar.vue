@@ -1,15 +1,15 @@
 <template>
   <header class="navbar">
-    <a class="brand" href="/#hero">
+    <RouterLink class="brand" :to="{ path: '/', hash: '#hero' }">
       <img src="@/assets/logo/cropped-CCS-Logov-new.png" alt="CCS logo" />
       <span>College of Computer Studies</span>
-    </a>
+    </RouterLink>
 
     <nav>
-      <a href="/#hero">Home</a>
-      <a href="/#programs">Programs Offered</a>
-      <a href="/faculty">Faculty &amp; Staff</a>
-      <a href="/#partners">Partnerships &amp; Memberships</a>
+      <RouterLink :to="{ path: '/', hash: '#hero' }">Home</RouterLink>
+      <RouterLink :to="{ path: '/', hash: '#programs' }">Programs Offered</RouterLink>
+      <RouterLink to="/faculty">Faculty &amp; Staff</RouterLink>
+      <RouterLink :to="{ path: '/', hash: '#partners' }">Partnerships &amp; Memberships</RouterLink>
     </nav>
   </header>
 </template>

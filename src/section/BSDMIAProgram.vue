@@ -9,8 +9,8 @@
           experiences that connect creativity with technology.
         </p>
         <div class="actions">
-          <a class="button primary" href="#overview">Explore the Program</a>
-          <a class="button outline" href="#careers">Career Opportunities</a>
+          <RouterLink class="button primary" :to="{ hash: '#overview' }">Explore the Program</RouterLink>
+          <RouterLink class="button outline" :to="{ hash: '#careers' }">Career Opportunities</RouterLink>
         </div>
         <p class="hero-note">DESIGN · MEDIA · INTERACTION</p>
       </div>

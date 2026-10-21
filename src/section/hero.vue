@@ -7,7 +7,7 @@
         Discover technology and computing education that helps students build skills, solve
         problems, and prepare for a connected world.
       </p>
-      <a class="button" href="/#programs">Programs Offered</a>
+      <RouterLink class="button" :to="{ path: '/', hash: '#programs' }">Programs Offered</RouterLink>
       <p class="motto">Remember. Connect. Engage. Build. Share.</p>
     </div>
 

@@ -16,7 +16,7 @@
           <p><strong>Overview:</strong> Apply computing systems, networks, and software to real needs.</p>
           <p><strong>What you can learn:</strong> Systems analysis, application development, and networking.</p>
           <p><strong>Career paths:</strong> IT support, systems analysis, network administration, and web development.</p>
-          <a class="program-link1" href="/bsit">See more</a>
+          <RouterLink class="program-link1" to="/bsit">See more</RouterLink>
         </details>
       </article>
 
@@ -29,7 +29,7 @@
           <p><strong>Overview:</strong> Explore computing principles, algorithms, and programming.</p>
           <p><strong>What you can learn:</strong> Programming, algorithms, software design, and computational thinking.</p>
           <p><strong>Career paths:</strong> Software development, systems engineering, data, and research.</p>
-          <a class="program-link2" href="/bscs">See more</a>
+          <RouterLink class="program-link2" to="/bscs">See more</RouterLink>
         </details>
       </article>
 
@@ -42,7 +42,7 @@
           <p><strong>Overview:</strong> Combine creative ideas and digital tools to create media and interactive content.</p>
           <p><strong>What you can learn:</strong> Visual design, digital content creation, animation, and interactive experiences.</p>
           <p><strong>Career paths:</strong> Graphic designer, multimedia artist, UI/UX designer, animator, and video editor.</p>
-          <a class="program-link3" href="/bsdmia">See more</a>
+          <RouterLink class="program-link3" to="/bsdmia">See more</RouterLink>
         </details>
       </article>
 
@@ -55,7 +55,7 @@
           <p><strong>Overview:</strong> Learn how information is organized, preserved, and shared.</p>
           <p><strong>What you can learn:</strong> Research support, digital resources, and information services.</p>
           <p><strong>Career paths:</strong> Librarian, information specialist, records officer, and digital collections assistant.</p>
-          <a class="program-link4" href="/blis">See more</a>
+          <RouterLink class="program-link4" to="/blis">See more</RouterLink>
         </details>
       </article>
     </div>

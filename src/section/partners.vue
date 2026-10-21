@@ -35,7 +35,7 @@
       </a>
     </div>
 
-    <a class="back-to-top" href="#hero">Back to top</a>
+    <RouterLink class="back-to-top" :to="{ path: '/', hash: '#hero' }">Back to top</RouterLink>
   </section>
 </template>
 

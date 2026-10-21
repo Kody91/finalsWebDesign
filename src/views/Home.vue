@@ -14,12 +14,12 @@ import Partners from '@/section/partners.vue'
       <p>Meet the people behind your learning</p>
       <h2 id="faculty-heading">Faculty and Staff</h2>
       <p>Get to know the faculty members and staff of the College of Computer Studies.</p>
-      <a href="/faculty" class="button">Meet our faculty and staff</a>
+      <RouterLink to="/faculty" class="button">Meet our faculty and staff</RouterLink>
     </section>
     <Partners />
   </main>
   <footer class="site-footer">
-    <a href="/#hero">CPU · CCS</a>
+    <RouterLink :to="{ path: '/', hash: '#hero' }">CPU · CCS</RouterLink>
     <span>College of Computer Studies</span>
     <span>Home Page</span>
   </footer>

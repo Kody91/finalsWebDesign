@@ -7,7 +7,7 @@
         Discover technology and computing education that helps students build skills, solve
         problems, and prepare for a connected world.
       </p>
-      <router-link class="button" to="/#programs">Explore our programs</router-link>
+      <a class="button" href="/#programs">Programs Offered</a>
       <p class="motto">Remember. Connect. Engage. Build. Share.</p>
     </div>
 
@@ -24,15 +24,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 40px;
-  min-height: 600px;
+  gap: 60px;
+  min-height: 620px;
   padding: 80px 10%;
   color: white;
-  background: #294735;
+  background: linear-gradient(120deg, #203b2b, #315e3c);
 }
 
 .hero-text {
-  max-width: 600px;
+  max-width: 620px;
 }
 
 .school-name,
@@ -42,60 +42,90 @@
 }
 
 .school-name {
+  display: inline-block;
+  margin: 0;
+  padding: 9px 13px;
+  border: 1px solid rgba(240, 210, 127, 0.45);
+  border-radius: 20px;
   letter-spacing: 2px;
   text-transform: uppercase;
+  font-size: 12px;
 }
 
 h1 {
-  max-width: 580px;
-  margin: 16px 0;
-  font-size: 52px;
-  line-height: 1.15;
+  max-width: 600px;
+  margin: 24px 0 20px;
+  font-size: 58px;
+  line-height: 1.08;
+  letter-spacing: -1.5px;
 }
 
 .hero-text > p:not(.school-name):not(.motto) {
   max-width: 540px;
-  color: #e2e9e3;
+  color: #e0e9dc;
   font-size: 18px;
-  line-height: 1.6;
+  line-height: 1.8;
 }
 
 .button {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
   margin-top: 14px;
-  padding: 14px 20px;
-  border-radius: 4px;
-  color: #254a34;
-  background: #f0d27f;
+  padding: 13px 20px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  color: #25372c;
+  background: #e5c875;
   font-weight: bold;
   text-decoration: none;
+  transition: transform 0.2s, background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
 .button:hover {
-  background: #f7dfa0;
+  transform: translateY(-3px);
+  border-color: #e5c875;
+  color: #e5c875;
+  background: #254a34;
+}
+
+.button:focus-visible {
+  outline: 3px solid #e5c875;
+  outline-offset: 3px;
 }
 
 .hero-logo {
   display: flex;
-  width: 300px;
-  height: 300px;
+  width: 330px;
+  height: 330px;
   flex-shrink: 0;
   align-items: center;
   justify-content: center;
-  border: 8px solid rgba(255, 255, 255, 0.16);
+  border: 10px solid rgba(255, 255, 255, 0.16);
   border-radius: 50%;
-  background: white;
+  background: #f7f6ef;
+  box-shadow: 0 20px 50px rgba(12, 29, 18, 0.3);
 }
 
 .hero-logo img {
-  width: 150px;
-  height: 150px;
+  width: 170px;
+  height: 170px;
   object-fit: contain;
+}
+
+.motto {
+  margin-top: 28px;
+  letter-spacing: 1px;
 }
 
 @media (max-width: 700px) {
   .hero {
     flex-direction: column;
+    justify-content: center;
+    gap: 42px;
+    min-height: auto;
+    padding: 70px 8%;
     text-align: center;
   }
 
@@ -105,12 +135,19 @@ h1 {
   }
 
   h1 {
-    font-size: 36px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 40px;
   }
 
   .hero-logo {
-    width: 230px;
-    height: 230px;
+    width: 250px;
+    height: 250px;
+  }
+
+  .hero-logo img {
+    width: 140px;
+    height: 140px;
   }
 }
 </style>

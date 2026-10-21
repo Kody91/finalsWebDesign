@@ -14,7 +14,7 @@ import Partners from '@/section/partners.vue'
       <p>Meet the people behind your learning</p>
       <h2 id="faculty-heading">Faculty and Staff</h2>
       <p>Get to know the faculty members and staff of the College of Computer Studies.</p>
-      <router-link class="button" to="/faculty">Meet our faculty and staff</router-link>
+      <a href="/faculty" class="button">Meet our faculty and staff</a>
     </section>
     <Partners />
   </main>
@@ -62,20 +62,31 @@ section {
 }
 
 .button {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
   margin-top: 14px;
-  padding: 14px 20px;
-  border-radius: 4px;
-  color: #254a34;
-  background: #f0d27f;
+  padding: 13px 20px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  color: #25372c;
+  background: #e5c875;
   font-weight: bold;
   text-decoration: none;
-  transition: background-color 0.2s, transform 0.2s;
+  transition: transform 0.2s, background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
 .button:hover {
-  transform: translateY(-2px);
-  background: #f7dfa0;
+  transform: translateY(-3px);
+  border-color: #e5c875;
+  color: #e5c875;
+  background: #254a34;
+}
+
+.button:focus-visible {
+  outline: 3px solid #e5c875;
+  outline-offset: 3px;
 }
 
 @media (max-width: 550px) {

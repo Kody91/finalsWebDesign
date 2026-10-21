@@ -87,13 +87,13 @@ h2 {
 }
 
 .partner-card:nth-child(1):hover {
-  border-color: #e4c45a;
+  border-color: #af6510;
   background: #fff9e9;
 }
 
 .partner-card:nth-child(1):hover h3,
 .partner-card:nth-child(1):hover p {
-  color: #866b18;
+  color: #af6510;
 }
 
 .partner-card:nth-child(2):hover {
@@ -107,23 +107,23 @@ h2 {
 }
 
 .partner-card:nth-child(3):hover {
-  border-color: #eab45d;
+  border-color: #2aad35;
   background: #fff6e9;
 }
 
 .partner-card:nth-child(3):hover h3,
 .partner-card:nth-child(3):hover p {
-  color: #986525;
+  color: #2aad35;
 }
 
 .partner-card:nth-child(4):hover {
-  border-color: #929fc2;
+  border-color: #b62d2d;
   background: #f3f5fa;
 }
 
 .partner-card:nth-child(4):hover h3,
 .partner-card:nth-child(4):hover p {
-  color: #465a83;
+  color: #b62d2d;
 }
 
 .partner-card img {
@@ -144,9 +144,17 @@ h2 {
   display: block;
   width: fit-content;
   margin: 35px auto 0;
+  padding: 10px 16px;
+  border-radius: 4px;
   color: #254a34;
   font-weight: bold;
   text-decoration: none;
+  transition: color 0.25s, background-color 0.25s;
+}
+
+.back-to-top:hover {
+  color: #fff;
+  background: #315e3c;
 }
 
 @media (max-width: 900px) {

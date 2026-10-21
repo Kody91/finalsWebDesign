@@ -52,6 +52,7 @@
           <p><strong>Overview:</strong> Learn how information is organized, preserved, and shared.</p>
           <p><strong>What you can learn:</strong> Research support, digital resources, and information services.</p>
           <p><strong>Career paths:</strong> Librarian, information specialist, records officer, and digital collections assistant.</p>
+          <a class="program-link" href="/blis">See more</a>
         </details>
       </article>
     </div>
@@ -177,6 +178,21 @@ details[open] summary span:first-child {
 
 details[open] summary span:last-child {
   display: inline;
+}
+
+.program-link {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 9px 14px;
+  border-radius: 4px;
+  color: white;
+  background: #315e3c;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.program-link:hover {
+  background: #254a34;
 }
 
 @media (max-width: 900px) {

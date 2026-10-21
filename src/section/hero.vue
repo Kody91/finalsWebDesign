@@ -7,15 +7,14 @@
         Discover technology and computing education that helps students build skills, solve
         problems, and prepare for a connected world.
       </p>
-      <router-link class="button" to="/programs">Explore our programs</router-link>
+      <router-link class="button" to="/#programs">Explore our programs</router-link>
       <p class="motto">Remember. Connect. Engage. Build. Share.</p>
     </div>
 
     <div class="hero-logo">
       <img
         src="@/assets/logo/cropped-CCS-Logov-new.png"
-        alt="Central Philippine University College of Computer Studies logo"
-      />
+        alt="Central Philippine University College of Computer Studies logo"/>
     </div>
   </section>
 </template>

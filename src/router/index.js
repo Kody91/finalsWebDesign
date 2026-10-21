@@ -2,12 +2,14 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 import Home from '@/views/Home.vue'
 import FacultyView from '@/views/FacultyView.vue'
+import BLIS from '@/views/BLIS.vue'
 
 const router = createRouter({
   history: createWebHistory(),
   routes: [
     { path: '/', name: 'Home', component: Home },
     { path: '/faculty', name: 'Faculty', component: FacultyView },
+    { path: '/blis', name: 'BLIS', component: BLIS },
   ],
 })
 

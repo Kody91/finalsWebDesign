@@ -342,6 +342,12 @@
   border-top: 4px solid var(--bright);
   border-radius: 8px;
   background: var(--cream);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.overview-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(18, 54, 83, 0.12);
 }
 
 .card-icon,

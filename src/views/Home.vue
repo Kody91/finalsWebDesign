@@ -8,7 +8,7 @@ import Partners from '@/section/partners.vue'
 <template>
   <Navbar />
   <main>
-    <Hero />
+    <Hero/>
     <Programs />
     <section class="faculty-link" aria-labelledby="faculty-heading">
       <p>Meet the people behind your learning</p>

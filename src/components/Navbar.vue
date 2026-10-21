@@ -1,15 +1,15 @@
 <template>
   <header class="navbar">
-    <router-link class="brand" to="/#hero">
+    <a class="brand" href="/#hero">
       <img src="@/assets/logo/cropped-CCS-Logov-new.png" alt="CCS logo" />
       <span>College of Computer Studies</span>
-    </router-link>
+    </a>
 
     <nav>
-      <router-link to="/#hero">Home</router-link>
-      <router-link to="/#programs">Programs Offered</router-link>
-      <router-link to="/faculty">Faculty &amp; Staff</router-link>
-      <router-link to="/#partners">Partnerships &amp; Memberships</router-link>
+      <a href="/#hero">Home</a>
+      <a href="/#programs">Programs Offered</a>
+      <a href="/faculty">Faculty &amp; Staff</a>
+      <a href="/#partners">Partnerships &amp; Memberships</a>
     </nav>
   </header>
 </template>

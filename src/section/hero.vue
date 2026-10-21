@@ -7,7 +7,7 @@
         Discover technology and computing education that helps students build skills, solve
         problems, and prepare for a connected world.
       </p>
-      <a class="button" href="#programs">Explore our programs</a>
+      <router-link class="button" to="/programs">Explore our programs</router-link>
       <p class="motto">Remember. Connect. Engage. Build. Share.</p>
     </div>
 

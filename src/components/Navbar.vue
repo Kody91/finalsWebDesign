@@ -48,6 +48,12 @@
   box-shadow: 0 4px 16px rgba(48, 38, 0, 0.22);
 }
 
+.navbar.bscs-navbar {
+  border-bottom-color: #75acd1;
+  background: linear-gradient(100deg, #123653, #286b98);
+  box-shadow: 0 4px 16px rgba(18, 54, 83, 0.22);
+}
+
 .brand {
   display: flex;
   align-items: center;
@@ -94,6 +100,11 @@
   background: #fff9e0;
 }
 
+.bscs-navbar .brand img {
+  border-color: rgba(117, 172, 209, 0.75);
+  background: #f5faff;
+}
+
 .brand:hover {
   color: #f0d27f;
 }
@@ -113,6 +124,10 @@
 
 .bsdmia-navbar .brand:hover img {
   border-color: #f2b705;
+}
+
+.bscs-navbar .brand:hover img {
+  border-color: #75acd1;
 }
 
 nav {
@@ -146,6 +161,10 @@ nav a {
   color: #fff3bf;
 }
 
+.bscs-navbar nav a {
+  color: #e5f3fb;
+}
+
 nav a:hover {
   transform: translateY(-2px);
   border-color: rgba(240, 210, 127, 0.45);
@@ -169,6 +188,12 @@ nav a:hover {
   border-color: #f2b705;
   color: #f2b705;
   background: #302600;
+}
+
+.bscs-navbar nav a:hover {
+  border-color: #75acd1;
+  color: #75acd1;
+  background: #123653;
 }
 
 nav a:active {

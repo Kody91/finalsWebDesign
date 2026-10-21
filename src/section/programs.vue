@@ -29,6 +29,7 @@
           <p><strong>Overview:</strong> Explore computing principles, algorithms, and programming.</p>
           <p><strong>What you can learn:</strong> Programming, algorithms, software design, and computational thinking.</p>
           <p><strong>Career paths:</strong> Software development, systems engineering, data, and research.</p>
+          <a class="program-link2" href="/bscs">See more</a>
         </details>
       </article>
 
@@ -186,6 +187,7 @@ details[open] summary span:last-child {
 }
 
 .program-link1,
+.program-link2,
 .program-link3,
 .program-link4 {
   display: inline-block;
@@ -203,6 +205,10 @@ details[open] summary span:last-child {
   background: #9a6f00;
 }
 
+.program-link2 {
+  background: #286b98;
+}
+
 .program-link4 {
   background: #465a83;
 }
@@ -216,6 +222,13 @@ details[open] summary span:last-child {
   color: #9a6f00;
   background: #f3f5fa;
   border-color: #9a6f00;
+}
+
+.program-link2:hover,
+.program-link2:focus-visible {
+  color: #286b98;
+  background: #f0f7fb;
+  border-color: #286b98;
 }
 
 .program-link4:hover,
@@ -233,6 +246,7 @@ details[open] summary span:last-child {
 }
 
 .program-link1:focus-visible,
+.program-link2:focus-visible,
 .program-link3:focus-visible,
 .program-link4:focus-visible {
   outline: 3px solid currentColor;

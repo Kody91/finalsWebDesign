@@ -5,6 +5,7 @@ import FacultyView from '@/views/FacultyView.vue'
 import BLIS from '@/views/BLIS.vue'
 import BSIT from '@/views/BSIT.vue'
 import BSDMIA from '@/views/BSDMIA.vue'
+import BSCS from '@/views/BSCS.vue'
 
 const router = createRouter({
   history: createWebHistory(),
@@ -14,6 +15,7 @@ const router = createRouter({
     { path: '/blis', name: 'BLIS', component: BLIS },
     { path: '/bsit', name: 'BSIT', component: BSIT },
     { path: '/bsdmia', name: 'BSDMIA', component: BSDMIA },
+    { path: '/bscs', name: 'BSCS', component: BSCS },
   ],
 })
 

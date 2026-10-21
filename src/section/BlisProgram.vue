@@ -452,7 +452,7 @@
   grid-template-columns: minmax(250px, 0.8fr) minmax(0, 1.2fr);
   gap: 24px clamp(35px, 7vw, 90px);
   align-items: start;
-  background: #e9f3df;
+  background: #e3edf5;
 }
 
 .career-intro h2 {
@@ -500,7 +500,7 @@
 }
 
 .why-section {
-  background: #e3edf5;
+  background: #e9f3df;
 }
 
 .why-grid {
@@ -540,7 +540,7 @@
   grid-template-columns: minmax(240px, 0.8fr) minmax(0, 1.2fr);
   gap: clamp(30px, 7vw, 90px);
   align-items: center;
-  background: #e9f3df;
+  background: #e3edf5;
 }
 
 .blis-mark {

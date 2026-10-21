@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '@/views/Home.vue'
 import FacultyView from '@/views/FacultyView.vue'
 import BLIS from '@/views/BLIS.vue'
+import BSIT from '@/views/BSIT.vue'
 
 const router = createRouter({
   history: createWebHistory(),
@@ -10,6 +11,7 @@ const router = createRouter({
     { path: '/', name: 'Home', component: Home },
     { path: '/faculty', name: 'Faculty', component: FacultyView },
     { path: '/blis', name: 'BLIS', component: BLIS },
+    { path: '/bsit', name: 'BSIT', component: BSIT },
   ],
 })
 

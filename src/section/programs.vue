@@ -16,6 +16,7 @@
           <p><strong>Overview:</strong> Apply computing systems, networks, and software to real needs.</p>
           <p><strong>What you can learn:</strong> Systems analysis, application development, and networking.</p>
           <p><strong>Career paths:</strong> IT support, systems analysis, network administration, and web development.</p>
+          <a class="program-link1" href="/bsit">See more</a>
         </details>
       </article>
 
@@ -52,7 +53,7 @@
           <p><strong>Overview:</strong> Learn how information is organized, preserved, and shared.</p>
           <p><strong>What you can learn:</strong> Research support, digital resources, and information services.</p>
           <p><strong>Career paths:</strong> Librarian, information specialist, records officer, and digital collections assistant.</p>
-          <a class="program-link" href="/blis">See more</a>
+          <a class="program-link4" href="/blis">See more</a>
         </details>
       </article>
     </div>
@@ -183,7 +184,18 @@ details[open] summary span:last-child {
   display: inline;
 }
 
-.program-link {
+.program-link1 {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 9px 14px;
+  border-radius: 4px;
+  color: white;
+  background: #9A6F00;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.program-link4 {
   display: inline-block;
   margin-top: 8px;
   padding: 9px 14px;
@@ -194,7 +206,14 @@ details[open] summary span:last-child {
   text-decoration: none;
 }
 
-.program-link:hover {
+.program-link1:hover {
+  color: #9A6F00;
+  background: #f3f5fa;
+  border: 1px solid #9A6F00;
+}
+
+
+.program-link4:hover {
   color: #465a83;
   background: #f3f5fa;
   border: 1px solid #465a83;

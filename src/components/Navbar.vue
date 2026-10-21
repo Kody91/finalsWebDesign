@@ -36,6 +36,12 @@
   box-shadow: 0 4px 16px rgba(16, 31, 77, 0.2);
 }
 
+.navbar.bsit-navbar {
+  border-bottom-color: #f2b705;
+  background: linear-gradient(100deg, #5c4300, #9a6f00);
+  box-shadow: 0 4px 16px rgba(61, 46, 0, 0.22);
+}
+
 .brand {
   display: flex;
   align-items: center;
@@ -50,6 +56,10 @@
 
 .blis-navbar .brand:hover {
   color: #bbea8e;
+}
+
+.bsit-navbar .brand:hover {
+  color: #ffd93d;
 }
 
 .brand img {
@@ -68,6 +78,11 @@
   background: #e9edf4;
 }
 
+.bsit-navbar .brand img {
+  border-color: rgba(255, 217, 61, 0.75);
+  background: #fff9e0;
+}
+
 .brand:hover {
   color: #f0d27f;
 }
@@ -79,6 +94,10 @@
 
 .blis-navbar .brand:hover img {
   border-color: #bbea8e;
+}
+
+.bsit-navbar .brand:hover img {
+  border-color: #ffd93d;
 }
 
 nav {
@@ -104,6 +123,10 @@ nav a {
   color: #e2e9f5;
 }
 
+.bsit-navbar nav a {
+  color: #fff3bf;
+}
+
 nav a:hover {
   transform: translateY(-2px);
   border-color: rgba(240, 210, 127, 0.45);
@@ -115,6 +138,12 @@ nav a:hover {
   border-color: #60b1e8;
   color: #bbea8e;
   background: #172b68;
+}
+
+.bsit-navbar nav a:hover {
+  border-color: #ffd93d;
+  color: #ffd93d;
+  background: #5c4300;
 }
 
 nav a:active {
@@ -130,6 +159,11 @@ nav a:focus-visible {
 .blis-navbar .brand:focus-visible,
 .blis-navbar nav a:focus-visible {
   outline-color: #bbea8e;
+}
+
+.bsit-navbar .brand:focus-visible,
+.bsit-navbar nav a:focus-visible {
+  outline-color: #ffd93d;
 }
 
 @media (max-width: 600px) {

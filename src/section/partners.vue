@@ -10,29 +10,29 @@
     </div>
 
     <div class="partner-list">
-      <article class="partner-card">
+      <a class="partner-card" href="https://www.oracle.com/" target="_blank" rel="noopener noreferrer">
         <img src="@/assets/img/oracle.png" alt="Oracle logo" />
         <h3>Oracle</h3>
         <p>Database, cloud computing, and enterprise technology.</p>
-      </article>
+      </a>
 
-      <article class="partner-card">
+      <a class="partner-card" href="https://www.cisco.com/" target="_blank" rel="noopener noreferrer">
         <img src="@/assets/img/cisco.png" alt="Cisco logo" />
         <h3>Cisco</h3>
         <p>Networking, cybersecurity, and communications technology.</p>
-      </article>
+      </a>
 
-      <article class="partner-card">
+      <a class="partner-card" href="https://www.acer.com/" target="_blank" rel="noopener noreferrer">
         <img src="@/assets/img/acer.jpg" alt="Acer logo" />
         <h3>Acer</h3>
         <p>Computing devices and digital technology solutions.</p>
-      </article>
+      </a>
 
-      <article class="partner-card">
+      <a class="partner-card" href="https://www.huawei.com/" target="_blank" rel="noopener noreferrer">
         <img src="@/assets/img/huawei.jpg" alt="Huawei logo" />
         <h3>Huawei</h3>
         <p>Information and communications technology.</p>
-      </article>
+      </a>
     </div>
 
     <a class="back-to-top" href="#hero">Back to top</a>
@@ -70,11 +70,60 @@ h2 {
 }
 
 .partner-card {
+  display: block;
   padding: 22px;
   border: 1px solid #d4ddd2;
   border-radius: 6px;
   background: white;
+  color: inherit;
   text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.partner-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.partner-card:nth-child(1):hover {
+  border-color: #e4c45a;
+  background: #fff9e9;
+}
+
+.partner-card:nth-child(1):hover h3,
+.partner-card:nth-child(1):hover p {
+  color: #866b18;
+}
+
+.partner-card:nth-child(2):hover {
+  border-color: #75acd1;
+  background: #f0f7fb;
+}
+
+.partner-card:nth-child(2):hover h3,
+.partner-card:nth-child(2):hover p {
+  color: #286b98;
+}
+
+.partner-card:nth-child(3):hover {
+  border-color: #eab45d;
+  background: #fff6e9;
+}
+
+.partner-card:nth-child(3):hover h3,
+.partner-card:nth-child(3):hover p {
+  color: #986525;
+}
+
+.partner-card:nth-child(4):hover {
+  border-color: #929fc2;
+  background: #f3f5fa;
+}
+
+.partner-card:nth-child(4):hover h3,
+.partner-card:nth-child(4):hover p {
+  color: #465a83;
 }
 
 .partner-card img {

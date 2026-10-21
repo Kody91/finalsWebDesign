@@ -12,7 +12,7 @@
         <h3>Bachelor of Science in Information Technology (BSIT)</h3>
         <p>Learn to use technology to solve practical problems and support organizations.</p>
         <details name="bsit">
-          <summary>Read more</summary>
+          <summary><span>Read more</span><span>Read less</span></summary>
           <p><strong>Overview:</strong> Apply computing systems, networks, and software to real needs.</p>
           <p><strong>What you can learn:</strong> Systems analysis, application development, and networking.</p>
           <p><strong>Career paths:</strong> IT support, systems analysis, network administration, and web development.</p>
@@ -24,7 +24,7 @@
         <h3>Bachelor of Science in Computer Science (BSCS)</h3>
         <p>Study the foundations of computing and learn to design software solutions.</p>
         <details name="bscs">
-          <summary>Read more</summary>
+          <summary><span>Read more</span><span>Read less</span></summary>
           <p><strong>Overview:</strong> Explore computing principles, algorithms, and programming.</p>
           <p><strong>What you can learn:</strong> Programming, algorithms, software design, and computational thinking.</p>
           <p><strong>Career paths:</strong> Software development, systems engineering, data, and research.</p>
@@ -36,7 +36,7 @@
         <h3>Bachelor of Science in Data Mining and Information Analytics (BSDMIA)</h3>
         <p>Analyze information and turn data into useful findings and decisions.</p>
         <details name="bsdmia">
-          <summary>Read more</summary>
+          <summary><span>Read more</span><span>Read less</span></summary>
           <p><strong>Overview:</strong> Find patterns in data and use them to support decisions.</p>
           <p><strong>What you can learn:</strong> Data preparation, analysis, visualization, and interpretation.</p>
           <p><strong>Career paths:</strong> Data analyst, business intelligence analyst, and research analyst.</p>
@@ -48,7 +48,7 @@
         <h3>Bachelor of Library and Information Science (BLIS)</h3>
         <p>Help people find, use, organize, and preserve information.</p>
         <details name="blis">
-          <summary>Read more</summary>
+          <summary><span>Read more</span><span>Read less</span></summary>
           <p><strong>Overview:</strong> Learn how information is organized, preserved, and shared.</p>
           <p><strong>What you can learn:</strong> Research support, digital resources, and information services.</p>
           <p><strong>Career paths:</strong> Librarian, information specialist, records officer, and digital collections assistant.</p>
@@ -109,7 +109,7 @@ h2 {
 
 .program-card:nth-child(1):hover h3,
 .program-card:nth-child(1):hover summary,
-.program-card:nth-child(1):hover details p {
+.program-card:nth-child(1):hover p {
   color: #866b18;
 }
 
@@ -120,7 +120,7 @@ h2 {
 
 .program-card:nth-child(2):hover h3,
 .program-card:nth-child(2):hover summary,
-.program-card:nth-child(2):hover details p {
+.program-card:nth-child(2):hover p {
   color: #286b98;
 }
 
@@ -131,7 +131,7 @@ h2 {
 
 .program-card:nth-child(3):hover h3,
 .program-card:nth-child(3):hover summary,
-.program-card:nth-child(3):hover details p {
+.program-card:nth-child(3):hover p {
   color: #986525;
 }
 
@@ -142,7 +142,7 @@ h2 {
 
 .program-card:nth-child(4):hover h3,
 .program-card:nth-child(4):hover summary,
-.program-card:nth-child(4):hover details p {
+.program-card:nth-child(4):hover p {
   color: #465a83;
 }
 
@@ -168,6 +168,15 @@ summary {
   color: #315e3c;
   cursor: pointer;
   font-weight: bold;
+}
+
+summary span:last-child,
+details[open] summary span:first-child {
+  display: none;
+}
+
+details[open] summary span:last-child {
+  display: inline;
 }
 
 @media (max-width: 900px) {
